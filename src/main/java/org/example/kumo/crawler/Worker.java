@@ -98,13 +98,17 @@ public class Worker implements Runnable {
             return;
 
         FileData info = DataClassifier.classify(targetUrl).extract(targetUrl);
+        Log.info("Got info: %s", info.toString());
         SyncSet.add(info);
     }
 
     void crawlLinks(Elements links) {
         for(Element link: links) {
             String linkUrl = link.absUrl("href");
-            WorkerThreadPool.getInstance().crawlUrl(linkUrl);
+            if(WorkerThreadPool.getInstance().canSpawnWorkers())
+                WorkerThreadPool.getInstance().crawlUrl(linkUrl);
+            else
+                break;
         }
     }
 

@@ -18,10 +18,11 @@ public class WorkerThreadPool {
     private int KEEP_ALIVE = 10;
     private ThreadPoolExecutor workerPool;
 
-    private int MAX_PAGE_FETCH = 100;
+    private final int  MAX_PAGE_FETCH = 5;
     private int CRAWL_DEPTH = 6;
     private boolean SPAWN_WORKERS = true;
 
+    private Boolean completed = false;
     private static WorkerThreadPool INSTANCE;
 
     private WorkerThreadPool() {
@@ -37,14 +38,17 @@ public class WorkerThreadPool {
         return INSTANCE;
     }
     public void crawlUrl(String url) {
+
+        if(!canSpawnWorkers())
+            return;
+
         UrlNode targetUrl = new UrlNode(url);
 
         if(SyncSet.contains(targetUrl)) {
             Log.info("Already crawled: %s", url);
             return;
         }
-        if(canSpawnWorkers())
-            addWorker(targetUrl);
+        addWorker(targetUrl);
     }
 
     private synchronized void addWorker(UrlNode targetUrl) {
@@ -59,24 +63,41 @@ public class WorkerThreadPool {
     public synchronized void shutdown() {
         // Shutdowns the worker pool
         // NOTE: Can cause RejectionExceptions
-        workerPool.shutdown();
+        workerPool.shutdownNow();
+        notify();
+
     }
 
+    public synchronized void waitComplete() {
+
+            try {
+                wait();
+                Log.info("Wait completed");
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+
+    }
     public synchronized boolean isTerminated() {
-        return workerPool.isTerminated();
+        if(workerPool.isTerminated() || workerPool.getActiveCount() == 0) {
+            notifyAll();
+            return true;
+        }
+        return false;
     }
 
     public synchronized boolean canSpawnWorkers() {
-        if(!SPAWN_WORKERS)  // No need to check if already false
-            return SPAWN_WORKERS;
 
-        if(SyncSet.size() > MAX_PAGE_FETCH) {
-            SPAWN_WORKERS = false;
-            Log.debug("Max crawl depth reached, Stopping spawning workers");
-            shutdown(); // No more spiders!!
+        synchronized (this) {
+            if (SyncSet.size() > MAX_PAGE_FETCH) {
+                SPAWN_WORKERS = false;
+                Log.debug("Max crawl depth reached, Stopping spawning workers");
+                shutdown(); // No more spiders!!
+                return false;
+            }
         }
 
-        return SPAWN_WORKERS;
+        return true;
     }
 
 }

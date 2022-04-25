@@ -17,4 +17,17 @@ public class Scraper {
         WorkerThreadPool.getInstance().crawlUrl(url);
 
     }
+
+    public void waitComplete() {
+
+        while(!WorkerThreadPool.getInstance().isTerminated()) {
+            Log.info("Waiting for termination");
+            try {
+                Thread.sleep(10000);  // TODO: This ia bad way of synchronization
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            //.getInstance().waitComplete();
+        }
+    }
 }

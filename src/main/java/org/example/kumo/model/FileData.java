@@ -27,4 +27,9 @@ public class FileData extends UrlNode {
 
         return metaData.toString();
     }
+
+    @Override
+    public String toString() {
+        return String.format("(%s)[mime: %s, metadata: %s]", url, mimeType, metaData.toString()); // Prints the first 20 chars of metadata
+    }
 }

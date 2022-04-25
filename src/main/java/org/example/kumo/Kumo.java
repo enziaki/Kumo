@@ -1,5 +1,6 @@
 package org.example.kumo;
 
+import org.example.kumo.data.SyncSet;
 import org.example.kumo.utils.Log;
 
 public class Kumo {
@@ -18,12 +19,16 @@ public class Kumo {
 
         //String url = args[0];
         //String url = "https://core.ac.uk/download/pdf/156620592.pdf";
-        String url = "https://google.com";
+        //String url = "https://google.com";
+        String url = "https://www.icegif.com/wp-content/uploads/icegif-2013.gif";
+
         Log.info("arg[1]: %s", url);
 
         Scraper scraper = new Scraper(url);
         scraper.crawl();
+        scraper.waitComplete();
 
         Log.info("Completed crawling!!");
+        Log.info("TOtal pages crawled: %d", SyncSet.size());
     }
 }
