@@ -10,7 +10,7 @@ public class FileData extends UrlNode {
     String mimeType;
     HashMap<String, String> metaData;
 
-    FileData(String url, String mimeType, HashMap<String, String> metaData) {
+    public FileData(String url, String mimeType, HashMap<String, String> metaData) {
         super(url);
         this.mimeType = mimeType;
         this.metaData = metaData;

@@ -15,19 +15,27 @@ public class WorkerThreadPool {
 
     private int MAX_THREADS = 10;
     private int MIN_THREADS = 3;
-    private int KEEP_ALIVE = 0;
+    private int KEEP_ALIVE = 10;
     private ThreadPoolExecutor workerPool;
 
-    private int MAX_PAGE_FETCH = 1000;
+    private int MAX_PAGE_FETCH = 100;
     private int CRAWL_DEPTH = 6;
     private boolean SPAWN_WORKERS = true;
 
-    WorkerThreadPool() {
+    private static WorkerThreadPool INSTANCE;
+
+    private WorkerThreadPool() {
         workerPool = new ThreadPoolExecutor(
                 MIN_THREADS, MAX_THREADS, KEEP_ALIVE, TimeUnit.MILLISECONDS, new LinkedBlockingDeque<>()
         );
+        workerPool.allowCoreThreadTimeOut(true);
     }
 
+    public static WorkerThreadPool getInstance() {
+        if(INSTANCE == null)
+            INSTANCE = new WorkerThreadPool();
+        return INSTANCE;
+    }
     public void crawlUrl(String url) {
         UrlNode targetUrl = new UrlNode(url);
 

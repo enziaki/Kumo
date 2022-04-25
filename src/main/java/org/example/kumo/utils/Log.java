@@ -20,6 +20,6 @@ public class Log {
     public synchronized static void error(String message, Object... args) {
         String threadName = Thread.currentThread().getName();
         String errorMessage = String.format("[Error (%s)] ", threadName);
-        System.out.println(String.format(errorMessage, args));
+        System.out.println(String.format(errorMessage + message, args));
     }
 }

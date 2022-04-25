@@ -7,6 +7,7 @@ import org.example.kumo.model.UrlNode;
  */
 public class DataClassifier {
     public static MetaDataExtractor classify(UrlNode targetUrl) {
-        return null;
+
+        return new DefaultMetaDataExtractor();
     }
 }

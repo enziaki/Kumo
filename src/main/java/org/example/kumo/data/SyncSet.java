@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
- * A thread-safe Set which interacts with the DB and inserts info
+ * A thread-safe Set which contains UrlNodes
  */
 public class SyncSet {
     private static final Set<UrlNode> graph = new TreeSet<>();
