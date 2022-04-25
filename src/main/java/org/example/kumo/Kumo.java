@@ -20,7 +20,10 @@ public class Kumo {
         //String url = args[0];
         //String url = "https://core.ac.uk/download/pdf/156620592.pdf";
         //String url = "https://google.com";
-        String url = "https://www.icegif.com/wp-content/uploads/icegif-2013.gif";
+        //String url = "https://safebooru.org//images/3094/fbd2ddf231f5436f821b760318b4d6313fa68908.gif";
+        String url = "https://dlcdn.apache.org/tika/2.3.0/tika-2.3.0-src.zip";
+        //String url = "https://files.catbox.moe/2i6pzq.mp4";
+        //String url = "https://video-cdn3.gelbooru.com/images/a7/72/a772f7c28330bfc51a4e54ab9644b1ba.mp4";
 
         Log.info("arg[1]: %s", url);
 
@@ -29,6 +32,6 @@ public class Kumo {
         scraper.waitComplete();
 
         Log.info("Completed crawling!!");
-        Log.info("TOtal pages crawled: %d", SyncSet.size());
+        Log.info("Total pages crawled: %d", SyncSet.size());
     }
 }

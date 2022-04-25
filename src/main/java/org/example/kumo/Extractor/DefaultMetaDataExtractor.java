@@ -6,9 +6,11 @@ import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.AutoDetectParser;
 import org.apache.tika.parser.ParseContext;
 import org.apache.tika.sax.BodyContentHandler;
+import org.example.kumo.Exceptions.UnknownFileSizeException;
 import org.example.kumo.model.FileData;
 import org.example.kumo.model.UrlNode;
 import org.example.kumo.utils.Log;
+import org.example.kumo.utils.UrlUtils;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
@@ -26,7 +28,7 @@ public class DefaultMetaDataExtractor implements MetaDataExtractor {
     public FileData extract(UrlNode targetNode) {
 
         AutoDetectParser parser = new AutoDetectParser();
-        BodyContentHandler handler = new BodyContentHandler();
+        BodyContentHandler handler = new BodyContentHandler(-1);
         Metadata metadata = new Metadata();
         ParseContext context = new ParseContext();
         URL url = null;
@@ -37,6 +39,17 @@ public class DefaultMetaDataExtractor implements MetaDataExtractor {
 
         try {
             url = new URL(targetNode.getUrl());
+
+            // Make sure it doesn't heapoverflow
+            int sizeInMb = UrlUtils.getFileSize(url);
+            int freeHeapInMb = (int) (Runtime.getRuntime().freeMemory() / 100_00_00);
+            Log.info("Size of (%s): %d", targetNode.getUrl(), sizeInMb);
+
+            if(sizeInMb > freeHeapInMb) {
+                Log.info("File(%s) Exceeds run time size, skipping metadata processing(FreeHeapMem: %d, ContentSize: %d)",
+                        targetNode.getUrl(), freeHeapInMb, sizeInMb);
+            }
+
             urlStream = url.openStream();
 
             Tika tika = new Tika();
@@ -56,6 +69,8 @@ public class DefaultMetaDataExtractor implements MetaDataExtractor {
             throw new RuntimeException(e);
         } catch (SAXException e) {
             // TODO: Fix beeg size error
+            throw new RuntimeException(e);
+        } catch (UnknownFileSizeException e) {
             throw new RuntimeException(e);
         }
 
