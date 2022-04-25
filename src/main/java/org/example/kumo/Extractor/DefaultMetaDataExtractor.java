@@ -71,7 +71,7 @@ public class DefaultMetaDataExtractor implements MetaDataExtractor {
             // TODO: Fix beeg size error
             throw new RuntimeException(e);
         } catch (UnknownFileSizeException e) {
-            throw new RuntimeException(e);
+            Log.info("Failed to calculate size for(%s) Skipping....", targetNode.getUrl());
         }
 
         return new FileData(targetNode.getUrl(), mimeType, fileMetadata);

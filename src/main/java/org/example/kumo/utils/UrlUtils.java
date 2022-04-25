@@ -28,9 +28,10 @@ public class UrlUtils {
         catch (Exception e) { // TODO: Better exception handling
             Log.error("Failed to get content length: %s ", e.toString());
         }
+        /*
         if(sizeInBytes == -1)
             throw new UnknownFileSizeException("Failed calculating size for: " + url.toString());
-
+         */
         return (int) sizeInBytes/100_00_00; // bytes to MB
     }
 }

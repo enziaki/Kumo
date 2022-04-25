@@ -18,6 +18,7 @@ import org.jsoup.select.Elements;
 import javax.imageio.metadata.IIOMetadataController;
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.SocketTimeoutException;
 import java.net.URISyntaxException;
 
@@ -50,7 +51,15 @@ public class Worker implements Runnable {
         catch (HttpStatusException hse) {
             Log.error("Error fetching urls: %s", hse.toString());
             return;
-        } catch (UnsupportedMimeTypeException mimeError) {
+        } catch (MalformedURLException mue) {
+            Log.error("Illegal url(%s): %s", targetNode.getUrl(), mue.toString());
+            return;
+        }
+        catch (IllegalArgumentException iae) {
+            Log.error("Illegal url(%s): %s", targetNode.getUrl(), iae.toString());
+            return;
+        }
+        catch (UnsupportedMimeTypeException mimeError) {
             extractAndUpdateDb(targetNode);
             return;
         }

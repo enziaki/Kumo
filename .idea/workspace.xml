@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6733233-f4f6-4e24-870c-1815cae5b18a" name="Changes" comment="Fix infinite crawl&#10;&#10;calling shutdown will not stop until it completes all the queued tasks, switching to shutdownNow for now.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Exceptions/UnknownFileSizeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/utils/UrlUtils.java" afterDir="false" />
+    <list default="true" id="c6733233-f4f6-4e24-870c-1815cae5b18a" name="Changes" comment="Fix extracting metadata from big files&#10;&#10;If the file is bigger than the current free heap size, then just skip it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/DefaultMetaDataExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/DefaultMetaDataExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/PacakgeMetaDataExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/PacakgeMetaDataExtractor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Kumo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Kumo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/crawler/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/crawler/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/crawler/WorkerThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/crawler/WorkerThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/utils/UrlUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/utils/UrlUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650865733377</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fix extracting metadata from big files&#10;&#10;If the file is bigger than the current free heap size, then just skip it">
+      <created>1650898251974</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650898251974</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +247,8 @@
     <MESSAGE value="Setup basic structure for crawler" />
     <MESSAGE value="Basic working crawler" />
     <MESSAGE value="Fix infinite crawl&#10;&#10;calling shutdown will not stop until it completes all the queued tasks, switching to shutdownNow for now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix infinite crawl&#10;&#10;calling shutdown will not stop until it completes all the queued tasks, switching to shutdownNow for now." />
+    <MESSAGE value="Fix extracting metadata from big files&#10;&#10;If the file is bigger than the current free heap size, then just skip it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix extracting metadata from big files&#10;&#10;If the file is bigger than the current free heap size, then just skip it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

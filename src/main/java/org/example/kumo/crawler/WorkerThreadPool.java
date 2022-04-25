@@ -18,7 +18,7 @@ public class WorkerThreadPool {
     private int KEEP_ALIVE = 10;
     private ThreadPoolExecutor workerPool;
 
-    private final int  MAX_PAGE_FETCH = 5;
+    private final int  MAX_PAGE_FETCH = 1000;
     private int CRAWL_DEPTH = 6;
     private boolean SPAWN_WORKERS = true;
 
