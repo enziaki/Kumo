@@ -9,13 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6733233-f4f6-4e24-870c-1815cae5b18a" name="Changes" comment="Fix logging error, Add metadata extractors">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Kumo_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="c6733233-f4f6-4e24-870c-1815cae5b18a" name="Changes" comment="Add fatjar build to gradle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/DataBase/DBInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/DataBase/DBInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Kumo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Kumo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/kumo/DataBase/DBInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/kumo/DataBase/DBInterfaceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650952986479</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add fatjar build to gradle">
+      <created>1650970408198</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650970408198</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,7 +283,9 @@
     <MESSAGE value="Fix extracting metadata from big files&#10;&#10;If the file is bigger than the current free heap size, then just skip it" />
     <MESSAGE value="Fix crawling unsupported urls&#10;&#10;Some unsupported urls sneak in for crawling, this commit fixes it" />
     <MESSAGE value="Fix logging error, Add metadata extractors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix logging error, Add metadata extractors" />
+    <MESSAGE value="Build fatjar with depends" />
+    <MESSAGE value="Add fatjar build to gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add fatjar build to gradle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
