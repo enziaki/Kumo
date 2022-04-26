@@ -64,12 +64,11 @@ public class DefaultMetaDataExtractor implements MetaDataExtractor {
         } catch (MalformedURLException e) {
             Log.error("Invalid Url: %s " + e.getMessage(), targetNode.getUrl());
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            Log.error("Exception(%s): " + e);
         } catch (TikaException e) {
-            throw new RuntimeException(e);
+            Log.error("Exception(%s): " + e);
         } catch (SAXException e) {
-            // TODO: Fix beeg size error
-            throw new RuntimeException(e);
+            Log.error("Exception(%s): " + e);
         } catch (UnknownFileSizeException e) {
             Log.info("Failed to calculate size for(%s) Skipping....", targetNode.getUrl());
         }

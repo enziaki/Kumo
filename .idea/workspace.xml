@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6733233-f4f6-4e24-870c-1815cae5b18a" name="Changes" comment="Fix extracting metadata from big files&#10;&#10;If the file is bigger than the current free heap size, then just skip it">
+    <list default="true" id="c6733233-f4f6-4e24-870c-1815cae5b18a" name="Changes" comment="Fix crawling unsupported urls&#10;&#10;Some unsupported urls sneak in for crawling, this commit fixes it">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/crawler/WorkerInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/DataClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/DataClassifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/DefaultMetaDataExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/DefaultMetaDataExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/PacakgeMetaDataExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/PacakgeMetaDataExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/PdfMetaDataExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Extractor/PdfMetaDataExtractor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Kumo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Kumo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/crawler/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/crawler/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/crawler/WorkerThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/crawler/WorkerThreadPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/utils/UrlUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/utils/UrlUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -184,11 +188,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.example.kumo.Kumo" />
         <item itemvalue="Gradle.DBInterfaceTest" />
         <item itemvalue="Gradle.DBInterfaceTest.testInsertAndDelete" />
         <item itemvalue="Gradle.TikaTest.checkTika" />
         <item itemvalue="Gradle.TikaTest.tikaTest" />
-        <item itemvalue="Application.org.example.kumo.Kumo" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650898251974</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix crawling unsupported urls&#10;&#10;Some unsupported urls sneak in for crawling, this commit fixes it">
+      <created>1650899642406</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650899642406</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +259,8 @@
     <MESSAGE value="Basic working crawler" />
     <MESSAGE value="Fix infinite crawl&#10;&#10;calling shutdown will not stop until it completes all the queued tasks, switching to shutdownNow for now." />
     <MESSAGE value="Fix extracting metadata from big files&#10;&#10;If the file is bigger than the current free heap size, then just skip it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix extracting metadata from big files&#10;&#10;If the file is bigger than the current free heap size, then just skip it" />
+    <MESSAGE value="Fix crawling unsupported urls&#10;&#10;Some unsupported urls sneak in for crawling, this commit fixes it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix crawling unsupported urls&#10;&#10;Some unsupported urls sneak in for crawling, this commit fixes it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -260,5 +272,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Kumo$org_example_kumo_Kumo.ic" NAME="org.example.kumo.Kumo Coverage Results" MODIFIED="1650900094528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.kumo.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -16,6 +16,10 @@ dependencies {
     implementation 'org.apache.tika:tika-core:2.3.0'
     implementation'org.apache.tika:tika-parsers-standard-package:2.3.0'
 
+    // To fix slf4j error which requires log4j ^_^
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.17.1'
+
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }

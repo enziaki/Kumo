@@ -14,7 +14,7 @@ public class UrlUtils {
      * @throws UnknownFileSizeException
      */
     public static int getFileSize(URL url) throws UnknownFileSizeException {
-
+        // TOOD: Not working for everything
         long sizeInBytes = -1;
 
         try {

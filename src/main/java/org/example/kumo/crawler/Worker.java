@@ -1,5 +1,6 @@
 package org.example.kumo.crawler;
 
+import org.apache.poi.hwmf.record.HwmfWindowing;
 import org.bouncycastle.asn1.cms.MetaData;
 import org.example.kumo.Extractor.DataClassifier;
 import org.example.kumo.Extractor.MetaDataExtractor;
@@ -22,7 +23,7 @@ import java.net.MalformedURLException;
 import java.net.SocketTimeoutException;
 import java.net.URISyntaxException;
 
-public class Worker implements Runnable {
+public class Worker implements WorkerInterface {
 
     private UrlNode targetNode;
 
