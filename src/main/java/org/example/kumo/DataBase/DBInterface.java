@@ -10,17 +10,21 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 
+
 /**
  * The Database interface for the entire project
  */
 public class DBInterface {
 
     static {
+        /*
         try {
             Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
+         */
+
     }
 
     private static Connection db;
@@ -39,7 +43,7 @@ public class DBInterface {
         try {
             db = DriverManager.getConnection(url, properties);
         } catch (SQLException sqe) {
-            Log.error("Failed to connect to database");
+            Log.error("Failed to connect to database: " + sqe);
             System.exit(-1);
         }
         Log.info("Connection established to: %s", url);

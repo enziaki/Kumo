@@ -1,0 +1,105 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Kumo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Kumo_jar</output-path>
+    <root id="archive" name="Kumo.jar">
+      <element id="module-output" name="Kumo.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-zip-commons/2.3.0/cb2e847c71e7b27cd14d9026c74ec62dc83ed20f/tika-parser-zip-commons-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi/5.2.0/bb45457149618cf283c70994abeb507ad3c24c7/poi-5.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-font-module/2.3.0/47ff05535980bec1b58ba9de0c561ee3e607dbce/tika-parser-font-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml/5.2.0/fc736a7272ea3bcd37d5051f744db451d760a46c/poi-ooxml-5.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6.1/dc15dff8f701b227ee523eeb7a17f77c10eafe2f/jdom2-2.0.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.virtuald/curvesapi/1.06/159dd2e8956459a4eb0a9a6ecda9004d8d289708/curvesapi-1.06.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.gagravarr/vorbis-java-tika/0.8/4ddbb27ac5884a0f0398a63d46a89d3bc87dc457/vorbis-java-tika-0.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-core/2.3.0/aaed656e1acf142da412d468405038104c0cf38b/tika-core-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parsers-standard-package/2.3.0/7be308dc50787ae8b8c242539be8f9ed1a23eba6/tika-parsers-standard-package-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ccil.cowan.tagsoup/tagsoup/1.2.1/5584627487e984c03456266d3f8802eb85a9ce97/tagsoup-1.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-audiovideo-module/2.3.0/8542f600ce70f056b328f6d46f1054e8f2b46b9a/tika-parser-audiovideo-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml-lite/5.2.0/af367b2e4b0dc79d16fb9bc0603e9e66ac01917f/poi-ooxml-lite-5.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.35/2f92ca85f248949b7a7dda48d6f720bd38c7343/jcl-over-slf4j-1.7.35.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/jempbox/1.8.16/1f41de81768ef84ca2d8cda4cb79e9272c8ee966/jempbox-1.8.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-cad-module/2.3.0/2659dc477a2bf04a1130798e2dc18e3901c7654a/tika-parser-cad-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-xml-module/2.3.0/6191d0b9b60707c33e7ad983e10c69643ce232db/tika-parser-xml-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-mail-commons/2.3.0/75bbec0b4673aa5f8f2e270095d5c03d655fa67d/tika-parser-mail-commons-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.1/6538b88eb8bf8811bc7b6efb5246f835c15e0bfe/junit-jupiter-api-5.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-digest-commons/2.3.0/3cd2d7be773fdf64b9ecede6b1f4dcc2bc860ec7/tika-parser-digest-commons-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/3.0.12/cbbe1a62b0cc6c85972e99d52aaee350153dc530/istack-commons-runtime-3.0.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox/2.0.25/c18cd03ff3a2dfc3c4a30d3a35173bd2690bcb92/pdfbox-2.0.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.plist/dd-plist/1.23/f522894abd90d6f5a15e9586e625407a7d50e80d/dd-plist-1.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-microsoft-module/2.3.0/60795fe88da167c44cd32f1039ea1efed040d191/tika-parser-microsoft-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/xmpbox/2.0.25/1aa2e145b15474d99d913de28a406fbe2f53e099/xmpbox-2.0.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jai-imageio/jai-imageio-core/1.4.0/fb6d79b929556362a241b2f65a04e538062f0077/jai-imageio-core-1.4.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.21/4ec95b60d4e86b5c95a0e919cb172a0af98011ef/commons-compress-1.21.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox-debugger/2.0.25/44cfe7b27dccb5432c02a171ca78fa5b643c00cb/pdfbox-debugger-2.0.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.activation/jakarta.activation/1.2.2/74548703f9851017ce2f556066659438019e7eb5/jakarta.activation-1.2.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-pkg-module/2.3.0/c19731eb452ef1f9e3288d19736b071ddbbd5e29/tika-parser-pkg-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-ocr-module/2.3.0/e3f6bfe6822f868f597b034ab92b44b6927123f1/tika-parser-ocr-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-news-module/2.3.0/5175fb1d8eea7a759d67350bc3f5b5a717defc10/tika-parser-news-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.xmlbeans/xmlbeans/5.0.3/e1ef1382ae9dfb2438b82b6dd575566355c2f30f/xmlbeans-5.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-code-module/2.3.0/ded48c0497d756706d61501914b6fb27281a37fe/tika-parser-code-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.junrar/junrar/7.4.1/3dce6bbc2b17a962263cc75a9193716cd3c0cc90/junrar-7.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-apple-module/2.3.0/7afb322bf5b0bef3ac2536cd05d68a4c2a96b392/tika-parser-apple-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.brotli/dec/0.1.2/c26a897ae0d524809eef1c786cc6183b4ddcc3b/dec-0.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rometools/rome-utils/1.18.0/3dc676ae59ab0be7ccd2bd6d2214779b97eec7db/rome-utils-1.18.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.6.1/e4ba98f1d4b3c80ec46392f25e094a6a2e58fcbf/commons-math3-3.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-exec/1.3/8dfb9facd0830a27b1b5f29f84593f0aeee7773b/commons-exec-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-pdf-module/2.3.0/825a1a902401ad06647ec8602c22f87df3df9cc4/tika-parser-pdf-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/a2503f302b11ebde7ebc3df41daebe0e4eea3689/commons-io-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zaxxer/SparseBitSet/1.2/8467c813d442837fcaeddbc42cf5c5359fab4933/SparseBitSet-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.4.01/3789d9fada2d3d458c4ba2de349d48780f381ee3/xml-apis-1.4.01.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j-core/0.8.4/a7e552628c6587bdd1e2036045f1e06c4d513e32/apache-mime4j-core-0.8.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.1/d771af8e336e372fb5399c99edabe0919aeaf5b2/log4j-api-2.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.70/4636a0d01f74acaf28082fb62b317f1080118371/bcprov-jdk15on-1.70.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.l3s.boilerpipe/boilerpipe/1.1.0/f62cb75ed52455a9e68d1d05b84c500673340eb2/boilerpipe-1.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcmail-jdk15on/1.70/8f4aafad90f6cc7f16b9992279828ae848c9e0d/bcmail-jdk15on-1.70.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.1/21b86e08aae2720bbf017703669948be96d1388c/junit-jupiter-engine-5.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.14.3/c43a81e18e6d0eb71951aa031d55d5c293c531a6/jsoup-1.14.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.35/517f3a0687490b72d0e56d815e05608a541af802/slf4j-api-1.7.35.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.2/81a03f76019c67362299c40e0ba13405f5467bff/asm-9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.5.0/2f50520c8abea66fbd8d26e481d3aef5c673b510/checker-qual-3.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-image-module/2.3.0/64a8793d3034102b305f0d4dd132edd610d9a502/tika-parser-image-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.12.2/f051f988aa2c9b4d25d05f95742ab0cc3ed789e2/xercesImpl-2.12.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.4/62ebe7544cb7164d87e0637a2a6a2bdc981395e8/commons-collections4-4.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-mail-module/2.3.0/9c75b167d113af8bf510280646adae80d45b4aa3/tika-parser-mail-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.5/a169a961a2bb9ac69517ec1005e451becf5cdfab/jaxb-runtime-2.3.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox-tools/2.0.25/baf53c291ed43c13a1230de3ce33711f441ab999/pdfbox-tools-2.0.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.3.5/ec8930fa62e7b1758b1664d135f50c7abe86a4a3/txw2-2.3.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.adobe.xmp/xmpcore/6.1.11/852f14101381e527e6d43339d7db1698c970436c/xmpcore-6.1.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-html-module/2.3.0/61977e7f755c3ebb102e8232af02a725e6b8c38f/tika-parser-html-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.gagravarr/vorbis-java-core/0.8/7e9937c2575cda2e3fc116415117c74f23e43fa6/vorbis-java-core-0.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.17.1/84692d456bcce689355d33d68167875e486954dd/log4j-slf4j-impl-2.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.1/1e362cbe6d0f225b066757865e233972557484/junit-platform-commons-1.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rometools/rome/1.18.0/bdc2933175bb9d92b41e4ace771f645f524d75d3/rome-1.18.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.drewnoakes/metadata-extractor/2.16.0/51092c14d9d7377b17a051333c229f1cd04605e6/metadata-extractor-2.16.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.3.4/4fc2f1f47f685cf06ba684564ec6be8ed18791a7/postgresql-42.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/jbig2-imageio/3.0.3/1719861ff0b86162c5b391fb4d1084c05ff72b35/jbig2-imageio-3.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-scratchpad/5.2.0/190fd35008917ea8096d30f0131443b47c9f509a/poi-scratchpad-5.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.15/49d94806b6e3dc933dacbd8acb0fdbab8ebd1e5d/commons-codec-1.15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.healthmarketscience.jackcess/jackcess-encrypt/4.0.1/2fbb076c291767197b5b8202bfebdcd4b4a7199e/jackcess-encrypt-4.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.healthmarketscience.jackcess/jackcess/4.0.1/e9953ac607c1d85647d6bc364579a871ef069441/jackcess-4.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codelibs/jhighlight/1.0.3/88831dce3d56aa53a1bfcba78518e8939b8d4779/jhighlight-1.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pff/java-libpst/0.9.3/928a6698850cd89577d28201ff1ac443bb339d2b/java-libpst-0.9.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.8.1/e6c63bf990dc88a6527b4ed617b23e47048f07e0/junit-platform-engine-1.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-miscoffice-module/2.3.0/1081ebbc3ad777df8feea074b13160c527e5a18a/tika-parser-miscoffice-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.james/apache-mime4j-dom/0.8.4/dfdfdbc095017ffbaef308e80ff7ca53b1a6ff08/apache-mime4j-dom-0.8.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/cd49678784c46aa8789c060538e0154013bb421b/juniversalchardet-1.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcutil-jdk15on/1.70/54280e7195a7430d7911ded93fc01e07300b9526/bcutil-jdk15on-1.70.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.9/1ea4bec1a921180164852c65006d928617bd2caf/xz-1.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-csv/1.9.0/b59d8f64cd0b83ee1c04ff1748de2504457018c1/commons-csv-1.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-html-commons/2.3.0/f7e6ed49fbef4bea8ba988eaa497bd285904e821/tika-parser-html-commons-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/fontbox/2.0.25/f6644a1eb1d165eded719a88bf7bdcff91740b98/fontbox-2.0.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-xmp-commons/2.3.0/32a4753bf9cd7188ef2cf3416c54176668dc2270/tika-parser-xmp-commons-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.17.1/779f60f3844dadc3ef597976fcb1e5127b1f343d/log4j-core-2.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.epam/parso/2.0.14/a02ea1b198c410a105d261efd2d7043739aecd8e/parso-2.0.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.70/f81e5af49571a9d5a109a88f239a73ce87055417/bcpkix-jdk15on-1.70.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-crypto-module/2.3.0/e3f5fd74ce2ae3a1f34fb11255d7025c752c2e57/tika-parser-crypto-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-text-module/2.3.0/9685959caef18e28df1039b496a5a9181247e31d/tika-parser-text-module-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.tallison/jmatio/1.5/517d932cc87a3b564f3f7a07ac347b725b619ab4/jmatio-1.5.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Gradle: org.postgresql:postgresql:42.3.4" />
+      <element id="library" level="application" name="postgresql" />
+    </root>
+  </artifact>
+</component>
