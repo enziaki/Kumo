@@ -16,16 +16,7 @@ import java.util.Properties;
  */
 public class DBInterface {
 
-    static {
-        /*
-        try {
-            Class.forName("org.postgresql.Driver");
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-         */
 
-    }
 
     private static Connection db;
     private static final String url = Config.databaseUrl();
@@ -98,9 +89,10 @@ public class DBInterface {
 
     public static void nukeTheTable() {
         try {
-            db.createStatement().execute("DROP TABLE IF EXISTS urls");
+            db.createStatement().execute("DROP TABLE IF EXISTS urls;");
         } catch (SQLException ignored) {
         }
+        createTable(); // Rebuild the Tables
     }
 
     public static boolean removeNode(UrlNode urlNode) {
@@ -128,4 +120,15 @@ public class DBInterface {
         return true;
     }
 
+    public static boolean saveTo(String fileName) {
+        String query = String.format("COPY urls TO '%s' DELIMITER ',' CSV HEADER;", fileName);  // TODO: escape chars
+
+        try {
+            db.createStatement().execute(query);
+        } catch (SQLException e) {
+            Log.error("Failed to save to file: " + e);
+            return false;
+        }
+        return true;
+    }
 }

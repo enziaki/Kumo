@@ -12,7 +12,7 @@ public class Scraper {
     }
 
     public void crawl() {
-        DBInterface.connectToDataBase();
+        //DBInterface.connectToDataBase();
 
         WorkerThreadPool.getInstance().crawlUrl(url);
 

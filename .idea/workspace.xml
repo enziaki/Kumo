@@ -9,9 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6733233-f4f6-4e24-870c-1815cae5b18a" name="Changes" comment="Add fatjar build to gradle">
+    <list default="true" id="c6733233-f4f6-4e24-870c-1815cae5b18a" name="Changes" comment="Fix DB test&#10;&#10;Database tests cannot be run on github actions vm">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/utils/HelperFunctions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/kumo/DataBase/DBInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/kumo/DataBase/DBInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/DataBase/DBInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/DataBase/DBInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Kumo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Kumo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kumo/Scraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kumo/Scraper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +61,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,22 +82,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.14712644"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.14712644&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -103,11 +107,11 @@
       <recent name="org.example.kumo.DataBase" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Kumo [fatJar]">
+  <component name="RunManager" selected="Application.org.example.kumo.Kumo">
     <configuration name="org.example.kumo.Kumo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.kumo.Kumo" />
       <module name="Kumo.main" />
-      <option name="PROGRAM_PARAMETERS" value="https://github.com" />
+      <option name="PROGRAM_PARAMETERS" value="https://google.com" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.kumo.*" />
@@ -262,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650970408198</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fix DB test&#10;&#10;Database tests cannot be run on github actions vm">
+      <created>1650973441522</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650973441522</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,7 +296,8 @@
     <MESSAGE value="Fix logging error, Add metadata extractors" />
     <MESSAGE value="Build fatjar with depends" />
     <MESSAGE value="Add fatjar build to gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add fatjar build to gradle" />
+    <MESSAGE value="Fix DB test&#10;&#10;Database tests cannot be run on github actions vm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix DB test&#10;&#10;Database tests cannot be run on github actions vm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
