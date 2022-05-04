@@ -64,7 +64,6 @@ public class WorkerThreadPool {
         // Shutdowns the worker pool
         // NOTE: Can cause RejectionExceptions
         workerPool.shutdownNow();
-        notify();
 
     }
 

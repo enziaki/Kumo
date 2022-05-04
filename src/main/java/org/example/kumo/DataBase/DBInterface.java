@@ -1,6 +1,5 @@
 package org.example.kumo.DataBase;
 
-import org.example.kumo.model.FileData;
 import org.example.kumo.model.UrlNode;
 import org.example.kumo.utils.Config;
 import org.example.kumo.utils.Log;

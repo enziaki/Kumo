@@ -1,9 +1,6 @@
 package org.example.kumo.crawler;
 
-import org.apache.poi.hwmf.record.HwmfWindowing;
-import org.bouncycastle.asn1.cms.MetaData;
 import org.example.kumo.Extractor.DataClassifier;
-import org.example.kumo.Extractor.MetaDataExtractor;
 import org.example.kumo.data.SyncSet;
 import org.example.kumo.model.FileData;
 import org.example.kumo.model.UrlNode;
@@ -16,8 +13,6 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import javax.imageio.metadata.IIOMetadataController;
-import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.SocketTimeoutException;
@@ -33,6 +28,12 @@ public class Worker implements WorkerInterface {
 
     @Override
     public void run() {
+        crawl();
+    }
+
+
+    @Override
+    public void crawl() {
         Log.info("Crawling url: %s", targetNode.getUrl());
 
         Document doc;
